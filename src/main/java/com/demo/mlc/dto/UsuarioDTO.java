@@ -25,4 +25,6 @@ public class UsuarioDTO {
     private Date fechaAlta;
     private Date fechaUltimoAcceso;
     private String foto;
+    private Date fechaNac;
+    private String sexo;
 }

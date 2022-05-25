@@ -26,7 +26,12 @@ import lombok.Data;
 @Table(name = "TUSUARIOS")
 public class UsuarioEntity implements Serializable {
 
-    @Id
+    /**
+	 * 
+	 */
+	
+
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="USUARIOID")
     private Integer usuarioId;
@@ -42,7 +47,7 @@ public class UsuarioEntity implements Serializable {
 
     @Column(name="PERSONAFISICAID")
     private Integer personaFisicaId;
-
+    
     @Column(name="USUARIO")
     private String usuario;
 
@@ -69,5 +74,11 @@ public class UsuarioEntity implements Serializable {
 
     @Column(name="FOTO")
     private String foto;
+    
+    @Column(name="FECHANAC")
+    private Date fechaNac;
+    
+    @Column(name="Sexo")
+    private String sexo;
 
 }
